@@ -10,7 +10,7 @@ const Navbar = () => {
                 <p className='text-xl md:block hidden  cursor-pointer font-bold'>MksU ID</p>
             </div>
             <div className="flex items-center text-lg  gap-4">
-                <p>Good Eevening <span className='text-[#2c2e8b] font-bold'>Eugene!</span> </p>
+                <p>Hi👋 <span className='text-[#2c2e8b] font-bold'>Eugene!</span> </p>
                 <div className="relative flex items-center justify-center w-8 h-8">
                     <FaBell className="w-5 h-5 text-gray-600 cursor-pointer" />
                     <span className="absolute -top-1 -right-1 bg-[#2c2e8b]  text-white text-xs w-4 h-4 flex items-center justify-center rounded-full">
