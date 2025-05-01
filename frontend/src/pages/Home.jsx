@@ -20,16 +20,16 @@ const Home = () => {
         >
           <div
             onClick={() => setCardView(!cardView)}
-            className="relative w-[350px] h-[230px] cursor-pointer"
+            className="relative w-[350px] h-[200px]  cursor-pointer"
             style={{ perspective: 1000 }}
           >
             <div
-              className={`w-full h-full transition-transform duration-900 ease-in-out transform-style-preserve-3d ${cardView ? 'rotate-y-360' : ''
+              className={`w-full h-full transition-transform duration-900 ease-in-out transform-style-preserve-3d ${cardView ? 'rotate-y-180' : ''
                 }`}
               style={{ transformStyle: 'preserve-3d' }}
             >
               {/* FRONT SIDE */}
-              <div className="absolute shadow-black w-[400px] backface-hidden bg-white border border-gray-300 rounded-lg shadow-lg flex  items-center p-6">
+              <div className="absolute -left-5 shadow-black w-[400px] backface-hidden bg-white border border-gray-300 rounded-lg shadow-lg flex  items-center p-6">
                 <img
                   src={image}
                   alt="Student"
@@ -51,7 +51,7 @@ const Home = () => {
               </div>
 
               {/* BACK SIDE */}
-              <div className="absolute w-[400px] shadow-black backface-hidden bg-white border border-gray-300 rounded-lg shadow-lg rotate-y-180 flex flex-col items-center text-sm text-center">
+              <div className="absolute -left-5 w-[400px] shadow-black backface-hidden bg-white border border-gray-300 rounded-lg shadow-lg rotate-y-180 flex flex-col items-center text-sm text-center">
                 <div className="w-full h-10 bg-black mt-4"></div>
                 <p>This card remains a property of Machakos University</p>
                 <p>P.O BOX 136-90100 MACHAKOS</p>
