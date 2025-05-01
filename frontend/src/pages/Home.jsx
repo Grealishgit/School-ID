@@ -24,7 +24,7 @@ const Home = () => {
             style={{ perspective: 1000 }}
           >
             <div
-              className={`w-full h-full transition-transform duration-700 ease-in-out transform-style-preserve-3d ${cardView ? 'rotate-y-180' : ''
+              className={`w-full h-full transition-transform duration-900 ease-in-out transform-style-preserve-3d ${cardView ? 'rotate-y-360' : ''
                 }`}
               style={{ transformStyle: 'preserve-3d' }}
             >
