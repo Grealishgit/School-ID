@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import logo from '../assets/logo.png';
 
 const Signup = () => {
-    const [isLogin, setIsLogin] = useState(false);
+    const [isLogin, setIsLogin] = useState(true);
     return (
-        <div className="min-h-screen flex w-full flex-col md:flex-row bg-gray-100" >
+        <div className="min-h-screen flex w-full flex-col md:flex-row bg-white" >
             {/* Left Section */}
             <div className="w-full min-h-screen md:w-1/2 bg-opacity-80 flex bg-cover bg-center bg-no-repeat items-center justify-center p-8"
                 style={{ backgroundImage: "url('bg.png')" }}>
@@ -19,14 +19,14 @@ const Signup = () => {
                     <p className='font-semibold text-sm'>Please fill in your details to login</p>
 
                     <form className="flex flex-col  w-[350px] md:p-12 p-12 mt-5 bg-white rounded-md shadow-lg shadow-gray-300">
-                    <div className='flex flex-col gap-2'>
-                        <label className='font-bold'>Username</label>
-                        <input type="text"
-                            placeholder='Student No/ Employee No'
+                        <div className='flex flex-col gap-2'>
+                            <label className='font-bold'>Username</label>
+                            <input type="text"
+                                placeholder='Student No/ Employee No'
                                 className='p-2 py-1  border-1 text-sm border-gray-300 focus:outline-none focus:border-blue-500'
-                        />
-                    </div>
-                    <div className='flex flex-col gap-2'>
+                            />
+                        </div>
+                        <div className='flex flex-col gap-2'>
                             <label className='font-bold'>Password</label>
                             <input type="password"
 
